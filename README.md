@@ -17,15 +17,15 @@ The workload of the project is divided in every step. The details are as follows
 
 - Discussion about the algorithm and ideas used in every step and the possible evaluation methods. (Fereshteh Sadeghi, Hamid Izadinia)
 
-- We applied computer vision methods for extraction of the connected regions in the image. (Hamid Izadinia)
+- Applying computer vision methods for extraction of the connected regions in the image. (Hamid Izadinia)
 
 - Implementation of finding connected components in graph using bipartite graph matching algorithm. (Fereshteh Sadeghi)
 
-- Then corresponding letter for each image patch is recognized by an OCR method which is using cross correlation between image patch and templates. (Fereshteh Sadeghi)
+- Recognizing the corresponding letter for each image patch using an OCR method which is based on cross correlation between image patch and templates. (Fereshteh Sadeghi)
 
-- For qualitative evaluation we used downloaded images from Google. (Hamid Izadinia)
+- Qualitative evaluation using downloaded images from Google. (Hamid Izadinia)
 
-- For quantitative evaluation we used word cloud implementation of d3 for generating word cloud and extract the ground truth values from SVG files. Then, we process PNG files using our method and compare the output results with the ground truth. (Hamid Izadinia)
+- Quantitative evaluation using word cloud implementation of d3 for generating word cloud and extraction of the ground truth values from SVG files. Then, processing PNG files using our method and compare the output results with the ground truth. (Hamid Izadinia)
 
 
 [Poster](https://github.com/CSE512-14W/fp-izadinia-fsadeghi/raw/master/final/poster-izadinia-fsadeghi.pdf),
