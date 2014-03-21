@@ -6,8 +6,6 @@ Hamid Izadinia, Fereshteh Sadeghi {izadinia,fsadeghi}@cs.uw.edu
 A breakdown of how the work was split among the group members and a commentary on the research/development process.
 
 
----- (If you decide not to put these info in the project page put them down here-----
-
 ![Overview](overview_final.png)
 
 ## Abstract
@@ -18,11 +16,15 @@ Word clouds and text visualization is one of the recent most popular and widely 
 [Final Paper](https://github.com/CSE512-14W/fp-izadinia-fsadeghi/raw/master/final/paper-izadinia-fsadeghi.pdf) 
 
 ## Running Instructions
+This project is implemented in Matlab and C++. For running the code you can run "run_script". In this script the following functions will run and the results will show in figure in every iteration of algorithm. The error of value estimation compared to ground truth prints as output.
 
-Put your running instructions here.  (Tell us how to open your visualization.) 
-
-If your visualization is web-based,  it would be great if your submissions can be opened online. [Github Pages](http://pages.github.com/) is a good and easy way to put your visualization online so you can put your link here.  For example:
-
-Access our visualization at http://cse512-14w.github.io/fp-jheer-kanitw/ or download this repository and run `python -m SimpleHTTPServer 9000` and access this from http://localhost:9000/.
-
-(If you put your work online, please also write [one-line description and put a link to your final work](http://note.io/1n3u46s) so people can access it directly from CSE512-14W page.)
+The functions are:
+1) Extracting the connected components in the image
+     connected_comp_patch.m
+2) Computing the edge weights for all connections in graph
+     get_rel_letters_func.m
+     get_rel_letters_vert_func.m
+3) Iterative word extraction and their weight estimation
+    convert_image_to_chart.m
+4) Reading ground truth histograms from SVG file
+    read_gt.m
