@@ -48,8 +48,8 @@ end
 % img = double(img);
 
 
-threshold = graythresh(img);
-% threshold = .82; %.75
+% threshold = graythresh(img);
+threshold = .82; %.75
 imbw =~im2bw(img,threshold);
 
 

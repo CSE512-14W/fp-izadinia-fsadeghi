@@ -1,4 +1,4 @@
-function convert_image_to_chart(im_name)
+function [wsc, w, w_amean] = convert_image_to_chart(im_name)
 close all;
 
 imagesset = './images/';
