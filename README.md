@@ -8,8 +8,21 @@ Decoding the Text Encoding
 ## Overview
 ![Overview](overview_final.png)
 
-## Abstract
-Word clouds and text visualization is one of the recent most popular and widely used types of visualizations. Despite the attractiveness and simplicity of producing word clouds, they do not provide a thorough visualization for the distribution of the underlying data. Therefore, it is important to redesign word clouds for improving their design choices and to be able to do further statistical analysis on data. In this paper we have proposed the development of a fully automatic redesigning algorithm for word cloud visualization. Our proposed method is able to decode an input word cloud visualization and provides the raw data in the form of a list of (word, value) pairs. We have tested our proposed method both qualitatively and quantitatively. The results of our experiments show that our algorithm is able to extract the words and their weights effectively with considerable low error rate.
+## Commentary on research/development process and Work Breakdown
+In this project we want to extract the raw data information in a given word cloud image.
+Word clouds and text visualization is one of the recent most popular and widely used types of visualizations. Despite the attractiveness and simplicity of producing word clouds, they do not provide a thorough visualization for the distribution of the underlying data. Therefore, it is important to redesign word clouds for improving their design choices and to be able to do further statistical analysis on data. In this paper we have proposed the development of a fully automatic redesigning algorithm for word cloud visualization. Our proposed method is able to decode an input word cloud visualization and provides the raw data in the form of a list of (word, value) pairs. To the best of our knowledge our work is the first attempt to extract raw data from word cloud visualization. We have tested our proposed method both qualitatively and quantitatively. The results of our experiments show that our algorithm is able to extract the words and their weights effectively with considerable low error rate. The workload of the project is divided in every step. The details are as follows:
+
+- Discussion about the algorithm and ideas used in every step and the possible evaluation methods. (Fereshteh Sadeghi, Hamid Izadinia)
+
+- We applied computer vision methods for extraction of the connected regions in the image. (Hamid Izadinia)
+
+- Implementation of finding connected components in graph using bipartite graph matching algorithm. (Fereshteh Sadeghi)
+
+- Then corresponding letter for each image patch is recognized by an OCR method which is using cross correlation between image patch and templates. (Fereshteh Sadeghi)
+
+- For qualitative evaluation we used downloaded images from Google. (Hamid Izadinia)
+
+- For quantitative evaluation we used word cloud implementation of d3 for generating word cloud and extract the ground truth values from SVG files. Then, we process PNG files using our method and compare the output results with the ground truth. (Hamid Izadinia)
 
 
 [Poster](https://github.com/CSE512-14W/fp-izadinia-fsadeghi/raw/master/final/poster-izadinia-fsadeghi.pdf),
@@ -36,3 +49,5 @@ The functions are:
 4. Reading ground truth histograms from SVG file
     
     read_gt.m
+
+
