@@ -2,7 +2,11 @@ close all;
 clear all;
 clc;
 
+<<<<<<< HEAD
+im_name = 'd3_003.png';
+=======
 im_name = 'd3_004.png';
+>>>>>>> FETCH_HEAD
 % im_name = 'fun.png';
 
 
