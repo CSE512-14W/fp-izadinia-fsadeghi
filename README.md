@@ -1,4 +1,4 @@
-Project Name
+Decoding the Text Encoding
 ===============
 Hamid Izadinia, Fereshteh Sadeghi {izadinia,fsadeghi}@cs.uw.edu
 
@@ -10,7 +10,9 @@ A breakdown of how the work was split among the group members and a commentary o
 
 ![Overview](overview.png)
 
-This is an example repository for the final project submission.  Put your abstract from your final paper here.
+## Abstract
+Word clouds and text visualization is one of the recent most popular and widely used types of visualizations. Despite the attractiveness and simplicity of producing word clouds, they do not provide a thorough visualization for the distribution of the underlying data. Therefore, it is important to redesign word clouds for improving the design choices and to be able to do further statistical analysis on data. In this paper we have proposed the development of a fully automatic redesigning algorithm for word cloud visualization. Our proposed method is able to decode an input word cloud visualization and provides the raw data in the form of a list of (word, value) pairs. We have tested our proposed method both qualitatively and quantitatively. The results of our experiments show that our algorithm is able to extract the words and their weights effectively with considerable low error rate.
+
 
 [Poster](https://github.com/CSE512-14W/fp-izadinia-fsadeghi/raw/master/final/poster-izadinia-fsadeghi.pdf),
 [Final Paper](https://github.com/CSE512-14W/fp-izadinia-fsadeghi/raw/master/final/paper-izadinia-fsadeghi.pdf) 
