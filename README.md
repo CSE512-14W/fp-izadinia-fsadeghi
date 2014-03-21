@@ -5,6 +5,7 @@ Decoding the Text Encoding
 1. Hamid Izadinia izadinia@uw.edu
 2. Fereshteh Sadeghi fsadeghi@uw.edu
 
+## Overview
 ![Overview](overview_final.png)
 
 ## Abstract
@@ -20,10 +21,13 @@ This project is implemented in Matlab and C++. For running the code you can run 
 The functions are:
 1. Extracting the connected components in the image
      connected_comp_patch.m
+     
 2. Computing the edge weights for all connections in graph
      get_rel_letters_func.m
      get_rel_letters_vert_func.m
+
 3. Iterative word extraction and their weight estimation
     convert_image_to_chart.m
+
 4. Reading ground truth histograms from SVG file
     read_gt.m
