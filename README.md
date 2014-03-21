@@ -19,15 +19,20 @@ Word clouds and text visualization is one of the recent most popular and widely 
 This project is implemented in Matlab and C++. For running the code you can run "run_script". In this script the following functions will run and the results will show in figure in every iteration of algorithm. The error of value estimation compared to ground truth prints as output.
 
 The functions are:
+
 1. Extracting the connected components in the image
+    
      connected_comp_patch.m
      
 2. Computing the edge weights for all connections in graph
+     
      get_rel_letters_func.m
      get_rel_letters_vert_func.m
 
 3. Iterative word extraction and their weight estimation
+    
     convert_image_to_chart.m
 
 4. Reading ground truth histograms from SVG file
+    
     read_gt.m
