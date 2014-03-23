@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>CSE512: Data Visualization</title>
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" type="text/css" href="http://courses.cs.washington.edu/courses/cse512/14wi/style.css"/>
+
+</head>
+
+<body>
+  <div class='content wider'>
+
+    <div class='title'>
+      <a href="http://courses.cs.washington.edu/courses/cse512/14wi/"><strong>CSE512</strong></a>
+         Projects
+         <small>(Winter 2014)</small>
+    </div>
+    <br/>
+
+    <div class='pub' data-spy="scroll" data-target=".navbar">
+
+      <h1 class="title">Decoding the Text Encoding</h1>
+      <div class="authors">
+        <a href="mailto:izadinia@cs.uw.edu">Hamid Izadinia</a>,
+        <a href="mailto:fsadeghi@cs.uw.edu">Fereshteh Sadeghi</a>
+      </div>
+
+      <div class="figure">
+        <img src="summary.png" width="100%"/>
+        <div class="caption">Our algorithm takes a word cloud as an input image and extracts its raw data in the form of a list of words with their corresponding weights.</div>
+      </div>
+
+      <p>
+        Word clouds and text visualization is one of the recent most popular and widely used types of visualizations. Despite the attractiveness and simplicity of producing word clouds, they do not provide a thorough visualization for the distribution of the underlying data. Therefore, it is important to redesign word clouds for improving their design choices and to be able to do further statistical analysis on data. In this paper we have proposed the development of a fully automatic redesigning algorithm for word cloud visualization. Our proposed method is able to decode an input word cloud visualization and provides the raw data in the form of a list of (word, value) pairs. To the best of our knowledge our work is the first attempt to extract raw data from word cloud visualization. We have tested our proposed method both qualitatively and quantitatively. The results of our experiments show that our algorithm is able to extract the words and their weights effectively with considerable low error rate.
+      </p>
+      
+      <h2>Software</h2>
+      <p>
+      This project is implemented in Matlab and C++. For running the code you can run "run_script". In this script the following functions will run and the results will show in figure in every iteration of algorithm. The error of value estimation compared to ground truth prints as output.
+      
+      The functions are:
+      
+      1) Extracting the connected components in the image
+
+      connected_comp_patch.m
+      
+      2) Computing the edge weights for all connections in graph
+      
+      get_rel_letters_func.m get_rel_letters_vert_func.m
+      
+      3) Iterative word extraction and their weight estimation
+      
+      convert_image_to_chart.m
+      
+      4) Reading ground truth histograms from SVG file
+      
+      read_gt.m
+      </p>
+
+      <h2>Materials</h2>
+      <div class="links">
+        <a href="final/paper-izadinia-fsadeghi.pdf" >PDF</a>
+        |
+        <a href="final/poster-izadinia-fsadeghi.pdf" >Poster</a>
+      </div>
+
+      <!-- h2>Videos</h2>
+      <video width="700" height="385" controls="">
+        <source src="http://idl.cs.washington.edu/static/images/projects/lyra/Playfair-New.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video -->
+
+
+      <div class='footer'>
+        <a href='http://cs.washington.edu'>Computer Science &amp; Engineering</a> -
+        <a href='http://www.washington.edu'>University of Washington</a>
+      </div>
+    </div>
+    <br/>
+    <br/>
+
+
+  </div>
+</body>
+
+</html>
